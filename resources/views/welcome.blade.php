@@ -18,7 +18,8 @@
                         <div class="card m-3" style="width: 18rem;">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $element->title }}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Original title: {{ $element->original_title }}</h6>
+                                <img style="height: 300px; width: 200px" src="{{ $element->img_path }}" alt="">
+                                <h6 class="card-subtitle my-2 text-muted">Original title: {{ $element->original_title }}</h6>
                                 <p class="card-text">Date of release: {{ $element->date }}</p>
                                 <p class="card-text">Vote: {{ $element->vote }}</p>
                                 <a href="{{ route('SingleMovie', $element->id) }}" class="btn btn-primary">Movie details</a>
